@@ -1,138 +1,612 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bimal Pati | Solution Architect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #34495e;
-            --accent: #3498db;
-            --bg: #f4f7f6;
-            --text: #333;
-            --white: #ffffff;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bimal Pati | Adobe AEM Architect & Solution Architect | Edge Delivery Services | London</title>
+<meta name="description" content="Bimal Pati — Adobe Certified Master Architect & Solution Architect specialising in AEM Sites, AEM Assets, Edge Delivery Services, and enterprise MarTech. 15+ years delivering high-traffic platforms for global brands. Based in London, UK.">
+<meta name="keywords" content="Adobe AEM Architect, AEM Sites, AEM Assets, Edge Delivery Services, AEMaaCS, Solution Architect, MarTech, Adobe Experience Cloud, AEM Cloud Service, Digital Transformation, Enterprise Architecture, MuleSoft, Salesforce, London, Bimal Pati">
+<meta name="author" content="Bimal Pati">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bimal-pati.github.io/">
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
-        
-        header { background: var(--primary); color: var(--white); padding: 4rem 2rem; text-align: center; }
-        .container { max-width: 1000px; margin: auto; padding: 2rem; }
-        
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1.2rem; color: var(--accent); font-weight: bold; margin-bottom: 1rem; }
-        .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 1rem; }
-        .contact-info a { color: var(--white); text-decoration: none; font-size: 0.9rem; }
+<!-- Open Graph -->
+<meta property="og:title" content="Bimal Pati | Adobe AEM Master Architect & Solution Architect">
+<meta property="og:description" content="Adobe Certified Master Architect specialising in AEM Sites, Assets, Edge Delivery Services & enterprise MarTech. 15+ years delivering high-traffic digital platforms.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://bimal-pati.github.io/">
+<meta property="og:locale" content="en_GB">
 
-        section { background: var(--white); margin-bottom: 2rem; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--primary); }
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bimal Pati | Adobe AEM Architect & Solution Architect">
+<meta name="twitter:description" content="Adobe Certified Master Architect. AEM Sites, Assets, Edge Delivery Services, MarTech. London, UK.">
 
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-        .skill-category h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--secondary); }
-        .skill-tag { display: inline-block; background: #e1e8ed; padding: 0.3rem 0.8rem; border-radius: 20px; margin: 0.2rem; font-size: 0.85rem; }
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bimal Pati",
+  "jobTitle": "Solution Architect & Adobe AEM Master Architect",
+  "description": "Adobe Certified Master Architect with 15+ years specialising in AEM Sites, AEM Assets, Edge Delivery Services, and enterprise digital transformation.",
+  "url": "https://bimal-pati.github.io",
+  "sameAs": ["https://www.linkedin.com/in/bimal-pati/"],
+  "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"},
+  "knowsAbout": ["Adobe AEM", "AEM Sites", "AEM Assets", "Edge Delivery Services", "AEMaaCS", "Solution Architecture", "MarTech", "Adobe Experience Cloud", "MuleSoft", "Salesforce", "Cloud Architecture", "Digital Transformation"],
+  "alumniOf": {"@type": "EducationalOrganization", "name": "Master in Computer Applications"},
+  "hasCredential": [
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Adobe Certified Master Architect – AEM"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Certified Scrum Master (CSM)"}
+  ]
+}
+</script>
 
-        .job { margin-bottom: 2rem; }
-        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-        .job-title { font-weight: bold; color: var(--primary); font-size: 1.1rem; }
-        .job-date { color: #7f8c8d; font-size: 0.9rem; }
-        .job-company { color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
-        
-        ul { margin-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-        footer { text-align: center; padding: 2rem; color: #7f8c8d; font-size: 0.8rem; }
-    </style>
+<style>
+  :root {
+    --ink: #0a0a0f;
+    --ink-mid: #2a2a35;
+    --ink-muted: #6b6b7a;
+    --paper: #fafaf7;
+    --paper-warm: #f4f2ec;
+    --accent: #c8522a;
+    --accent-soft: #f0e8e3;
+    --gold: #b8922a;
+    --gold-soft: #f5f0e3;
+    --border: rgba(10,10,15,0.1);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.7; overflow-x: hidden; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 3rem;
+    background: rgba(250,250,247,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; padding: 0.55rem 1.4rem; background: var(--ink); color: var(--paper); text-decoration: none; border-radius: 2px; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--accent); }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; position: relative; overflow: hidden; }
+  .hero-bg-pattern {
+    position: absolute; inset: 0; z-index: 0; opacity: 0.4;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, var(--border) 79px, var(--border) 80px),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, var(--border) 79px, var(--border) 80px);
+  }
+  .hero-left { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
+  .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--accent); }
+  h1.hero-name { font-family: var(--serif); font-size: clamp(3rem, 5vw, 5rem); font-weight: 900; line-height: 1.0; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 0.75rem; }
+  .hero-title { font-family: var(--serif); font-size: clamp(1rem, 1.6vw, 1.35rem); font-weight: 400; font-style: italic; color: var(--ink-muted); margin-bottom: 2rem; line-height: 1.4; }
+  .hero-desc { font-size: 1rem; color: var(--ink-mid); max-width: 480px; margin-bottom: 2.5rem; line-height: 1.8; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem; }
+  .hero-tag { font-size: 0.72rem; font-weight: 500; padding: 0.3rem 0.85rem; border: 1px solid var(--border); border-radius: 1px; color: var(--ink-muted); background: var(--paper); letter-spacing: 0.03em; }
+  .hero-tag.accent { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .hero-tag.gold { background: var(--gold-soft); border-color: var(--gold); color: var(--gold); }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; padding: 0.85rem 2rem; background: var(--ink); color: var(--paper); text-decoration: none; border-radius: 2px; letter-spacing: 0.03em; transition: background 0.2s, transform 0.15s; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn-secondary { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; padding: 0.85rem 2rem; background: transparent; color: var(--ink); text-decoration: none; border-radius: 2px; border: 1px solid var(--border); letter-spacing: 0.03em; transition: border-color 0.2s; }
+  .btn-secondary:hover { border-color: var(--ink); }
+
+  /* HERO RIGHT */
+  .hero-right { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 4rem 4rem 4rem 2rem; background: var(--ink); }
+  .hero-card { width: 100%; max-width: 420px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2.5rem; color: white; }
+  .hero-profile-row { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; }
+
+  /* Photo — replace photo.jpg with your actual headshot file */
+  .hero-avatar {
+    width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; position: relative;
+  }
+  .hero-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+  .avatar-fallback { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; color: rgba(255,255,255,0.45); }
+
+  .hero-card-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .hero-card-role { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+  .cert-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; font-weight: 500; padding: 0.35rem 0.75rem; background: rgba(200,82,42,0.2); border: 1px solid rgba(200,82,42,0.4); border-radius: 2px; color: #f4a07a; margin-bottom: 1.5rem; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+  .stat-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 3px; padding: 1rem; }
+  .stat-num { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; color: white; }
+  .stat-label { font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-top: 0.15rem; letter-spacing: 0.03em; }
+  .hero-card-footer { padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.08); }
+  .location-pill { font-size: 0.75rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 0.4rem; }
+
+  /* MARQUEE */
+  .marquee-section { background: var(--ink); padding: 0.9rem 0; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .marquee-track { display: flex; white-space: nowrap; animation: marquee 32s linear infinite; }
+  .marquee-item { display: inline-flex; align-items: center; gap: 1rem; padding: 0 2rem; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+  .marquee-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* SECTIONS */
+  section { padding: 6rem 5rem; }
+  .section-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  h2.section-title { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1rem; }
+  .section-sub { font-size: 1rem; color: var(--ink-muted); max-width: 560px; line-height: 1.7; margin-bottom: 3rem; }
+
+  /* EXPERTISE */
+  #expertise { background: var(--paper-warm); }
+  .expertise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--border); border: 1px solid var(--border); }
+  .expertise-card { background: var(--paper-warm); padding: 2rem; transition: background 0.2s; }
+  .expertise-card:hover { background: white; }
+  .expertise-icon { width: 40px; height: 40px; border-radius: 2px; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+  .expertise-icon.red { background: var(--accent-soft); }
+  .expertise-icon.gold { background: var(--gold-soft); }
+  .expertise-icon.dark { background: rgba(10,10,15,0.07); }
+  .expertise-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--ink); }
+  .expertise-card p { font-size: 0.85rem; color: var(--ink-muted); line-height: 1.6; }
+  .expertise-kws { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .kw { font-size: 0.67rem; padding: 0.2rem 0.55rem; background: white; border: 1px solid var(--border); color: var(--ink-muted); border-radius: 1px; letter-spacing: 0.02em; }
+
+  /* EXPERIENCE */
+  #experience { background: var(--paper); }
+  .exp-timeline { position: relative; padding-left: 2rem; }
+  .exp-timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--border); }
+  .exp-item { position: relative; margin-bottom: 3rem; padding-left: 1.5rem; }
+  .exp-item::before { content: ''; position: absolute; left: -2.3rem; top: 0.4rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); border: 2px solid var(--paper); outline: 1px solid var(--accent); }
+  .exp-company-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.25rem; }
+  .exp-item h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; margin-bottom: 0.15rem; color: var(--ink); }
+  .exp-sector { font-size: 0.8rem; color: var(--accent); font-weight: 500; margin-bottom: 0.75rem; }
+  .exp-bullets { list-style: none; }
+  .exp-bullets li { font-size: 0.88rem; color: var(--ink-mid); padding: 0.3rem 0; line-height: 1.6; display: flex; align-items: flex-start; gap: 0.6rem; }
+  .exp-bullets li::before { content: '→'; color: var(--accent); flex-shrink: 0; margin-top: 0.05rem; font-size: 0.75rem; }
+
+  /* METRICS */
+  #metrics { background: var(--ink); }
+  #metrics .section-label { color: rgba(200,82,42,0.8); }
+  #metrics .section-label::after { background: rgba(255,255,255,0.1); }
+  #metrics h2.section-title { color: white; }
+  .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); }
+  .metric-item { background: var(--ink); padding: 2.5rem 2rem; text-align: center; transition: background 0.2s; }
+  .metric-item:hover { background: rgba(255,255,255,0.03); }
+  .metric-num { font-family: var(--serif); font-size: 2.8rem; font-weight: 900; color: white; line-height: 1; margin-bottom: 0.4rem; }
+  .metric-num span { color: var(--accent); }
+  .metric-label { font-size: 0.78rem; color: rgba(255,255,255,0.45); letter-spacing: 0.04em; line-height: 1.4; }
+
+  /* CERTIFICATIONS */
+  #certs { background: var(--paper-warm); }
+  .certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .cert-card { background: white; border: 1px solid var(--border); border-radius: 3px; padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem; transition: box-shadow 0.2s, transform 0.2s; }
+  .cert-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); transform: translateY(-2px); }
+  .cert-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .cert-card h4 { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .cert-card p { font-size: 0.75rem; color: var(--ink-muted); }
+
+  /* SKILLS */
+  #skills { background: var(--paper); }
+  .skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .skill-group { margin-bottom: 1.5rem; }
+  .skill-group h3 { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+  .skill-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .skill-pill { font-size: 0.75rem; padding: 0.3rem 0.75rem; border: 1px solid var(--border); border-radius: 1px; color: var(--ink-mid); background: var(--paper-warm); }
+  .skill-pill.highlight { background: var(--accent-soft); border-color: rgba(200,82,42,0.3); color: var(--accent); font-weight: 500; }
+
+  /* CTA */
+  #contact { background: var(--accent); padding: 6rem 5rem; text-align: center; }
+  #contact h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 900; color: white; letter-spacing: -0.03em; margin-bottom: 1rem; line-height: 1.1; }
+  #contact p { font-size: 1rem; color: rgba(255,255,255,0.75); margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-white { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; padding: 0.9rem 2.2rem; background: white; color: var(--accent); text-decoration: none; border-radius: 2px; letter-spacing: 0.03em; transition: opacity 0.2s, transform 0.15s; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-white:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-outline-white { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; padding: 0.9rem 2.2rem; background: transparent; color: white; text-decoration: none; border-radius: 2px; border: 1px solid rgba(255,255,255,0.5); letter-spacing: 0.03em; transition: border-color 0.2s; }
+  .btn-outline-white:hover { border-color: white; }
+
+  /* FOOTER */
+  footer { background: var(--ink); padding: 2.5rem 5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer-brand { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: white; }
+  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+
+  /* ANIMATIONS */
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 5rem 2rem 3rem; }
+    .hero-right { padding: 3rem 2rem; }
+    section { padding: 4rem 2rem; }
+    .expertise-grid { grid-template-columns: 1fr; }
+    .metrics-grid { grid-template-columns: 1fr 1fr; }
+    .certs-grid { grid-template-columns: 1fr; }
+    .skills-layout { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
+    #contact { padding: 4rem 2rem; }
+  }
+</style>
 </head>
 <body>
 
-<header>
-    <h1>Bimal Pati</h1>
-    <div class="subtitle">Solution Architect | Enterprise Digital Transformation</div>
-    <div class="contact-info">
-        <span><i class="fas fa-map-marker-alt"></i> London, UK</span>
-        <a href="mailto:bimal.kanta.pati@gmail.com"><i class="fas fa-envelope"></i> bimal.kanta.pati@gmail.com</a>
-        <a href="https://www.linkedin.com/in/bimal-pati" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <span><i class="fas fa-phone"></i> +44-7737989760</span>
+<nav>
+  <a href="#" class="nav-logo">Bimal Pati</a>
+  <ul class="nav-links">
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#metrics">Impact</a></li>
+    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://www.linkedin.com/in/bimal-pati/" target="_blank" rel="noopener" class="nav-cta">LinkedIn ↗</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">Adobe AEM Master Architect · London, UK</div>
+    <h1 class="hero-name">Bimal<br>Pati</h1>
+    <p class="hero-title">Solution Architect & Digital Transformation Authority</p>
+    <p class="hero-desc">
+      Adobe Certified Master Architect with 15+ years delivering enterprise-scale digital platforms.
+      Deep specialist in AEM Sites, AEM Assets, Edge Delivery Services, and the full Adobe Experience Cloud.
+      Trusted Technical Authority for global brands across Banking, Retail, Travel, and Insurance.
+    </p>
+    <div class="hero-tags">
+      <span class="hero-tag accent">Adobe AEM Architect</span>
+      <span class="hero-tag gold">Adobe Certified Master</span>
+      <span class="hero-tag">AEM Sites & Assets</span>
+      <span class="hero-tag">Edge Delivery Services</span>
+      <span class="hero-tag">AEMaaCS</span>
+      <span class="hero-tag">MarTech</span>
+      <span class="hero-tag">Solution Architecture</span>
+      <span class="hero-tag">Enterprise Digital Transformation</span>
     </div>
+    <div class="hero-actions">
+      <a href="https://www.linkedin.com/in/bimal-pati/" target="_blank" rel="noopener" class="btn-primary">Connect on LinkedIn ↗</a>
+      <a href="mailto:bimal.kanta.pati@gmail.com" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-profile-row">
+        <!--
+          PHOTO: Save your headshot as "photo.jpg" in the same folder as this file.
+          Recommended: square crop, at least 200×200px.
+          If no photo is found, initials "BP" display automatically.
+        -->
+        <div class="hero-avatar">
+          <img src="photo.jpg" alt="Bimal Pati — Solution Architect"
+               onerror="this.style.display='none'; document.getElementById('av-fallback').style.display='flex';">
+          <span id="av-fallback" class="avatar-fallback" style="display:none;">BP</span>
+        </div>
+        <div>
+          <div class="hero-card-name">Bimal Pati</div>
+          <div class="hero-card-role">Solution Architect · AEM Master · MarTech</div>
+        </div>
+      </div>
+      <div class="cert-badge">★ Adobe Certified Master Architect — AEM</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years in enterprise engineering</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1M+</div>
+          <div class="stat-label">Hits/minute platforms delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">60TB</div>
+          <div class="stat-label">Assets migrated, zero downtime</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">99.99<span style="font-size:1rem">%</span></div>
+          <div class="stat-label">Uptime SLA maintained</div>
+        </div>
+      </div>
+      <div class="hero-card-footer">
+        <div class="location-pill">📍 London, UK</div>
+      </div>
+    </div>
+  </div>
 </header>
 
-<div class="container">
-    <section id="summary">
-        <h2>Executive Summary</h2>
-        <p>Digital Transformation Leader & AEM Master Architect with 15+ years of experience delivering enterprise-scale platforms. Specialist in consolidating fragmented legacy estates into cloud-native architectures, driving $1.2M/year in cost savings and 30% faster content lifecycles[cite: 1].</p>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Toolkit</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Adobe Suite</h3>
-                <span class="skill-tag">AEM Cloud Service</span>
-                <span class="skill-tag">AEP</span>
-                <span class="skill-tag">Target</span>
-                <span class="skill-tag">Analytics</span>
-            </div>
-            <div class="skill-category">
-                <h3>Cloud & DevOps</h3>
-                <span class="skill-tag">AWS (Lambda, S3, ECS)</span>
-                <span class="skill-tag">Azure</span>
-                <span class="skill-tag">Terraform</span>
-                <span class="skill-tag">CI/CD</span>
-            </div>
-            <div class="skill-category">
-                <h3>Engineering</h3>
-                <span class="skill-tag">Java/Sling</span>
-                <span class="skill-tag">GraphQL</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Microservices</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">Adobe AEM SME & Solution Architect</div>
-                <div class="job-date">April 2019 – Present</div>
-            </div>
-            <div class="job-company">Deloitte UK | London, UK</div>
-            <ul>
-                <li>Acting as primary architect for a 5TB/400k asset legacy migration to AEM Cloud Service[cite: 1].</li>
-                <li>Designed a global travel platform for AlUla using AEM CaaS and MuleSoft[cite: 1].</li>
-                <li>Unified Waitrose's disparate systems into a centralized AEM ecosystem, handling 3x Black Friday traffic spikes[cite: 1].</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <div class="job-title">AEM Architect & International Tech Lead</div>
-                <div class="job-date">June 2013 – March 2019</div>
-            </div>
-            <div class="job-company">Deloitte USI | Hyderabad, India</div>
-            <ul>
-                <li>Unified 28 regional online stores for a global sportswear retailer into a single codebase[cite: 1].</li>
-                <li>Engineered caching support for 1M+ hits/minute with 99.99% availability[cite: 1].</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education & Certifications</h2>
-        <ul>
-            <li><strong>Adobe Certified Master:</strong> AEM Architect[cite: 1]</li>
-            <li><strong>Masters in Computer Applications (MCA):</strong> Grade A+[cite: 1]</li>
-            <li><strong>BSc Mathematics:</strong> 87%[cite: 1]</li>
-        </ul>
-    </section>
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>Adobe AEM Sites</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>AEM Assets</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Edge Delivery Services</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>AEMaaCS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Solution Architect</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Adobe Experience Cloud</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>MarTech Architecture</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Salesforce Integration</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>MuleSoft</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Digital Transformation</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Cloud Native</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Agentic AI</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Adobe AEM Sites</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>AEM Assets</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Edge Delivery Services</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>AEMaaCS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Solution Architect</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Adobe Experience Cloud</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>MarTech Architecture</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Salesforce Integration</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>MuleSoft</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Digital Transformation</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Cloud Native</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Agentic AI</span>
+  </div>
 </div>
 
+<section id="expertise">
+  <div class="section-label">Core Specialisations</div>
+  <h2 class="section-title">Adobe AEM, Edge Delivery<br>& Enterprise Architecture</h2>
+  <p class="section-sub">Deep-stack expertise across the full Adobe Experience Cloud — from AEM Sites and Assets to Edge Delivery Services — combined with enterprise solution architecture for regulated industries.</p>
+  <div class="expertise-grid fade-up">
+
+    <div class="expertise-card">
+      <div class="expertise-icon red">⬡</div>
+      <h3>Adobe AEM Sites & Assets</h3>
+      <p>End-to-end architecture of AEM Sites and AEM Assets across all deployment models: AEM as a Cloud Service (AEMaaCS), Managed Services, and on-premises. Specialist in content modelling, multi-site management, DAM governance, and high-volume digital asset migrations.</p>
+      <div class="expertise-kws">
+        <span class="kw">AEM Sites</span><span class="kw">AEM Assets</span><span class="kw">AEMaaCS</span><span class="kw">DAM Migration</span><span class="kw">Multi-Site Manager</span><span class="kw">Content Fragments</span>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-icon gold">◈</div>
+      <h3>Edge Delivery Services (EDS)</h3>
+      <p>Architecting next-generation content delivery with Adobe Edge Delivery Services — including document-based authoring, Universal Editor integration, custom block development, CDN optimisation, and performance-first patterns achieving Lighthouse 95+ scores.</p>
+      <div class="expertise-kws">
+        <span class="kw">Edge Delivery Services</span><span class="kw">Universal Editor</span><span class="kw">Document Authoring</span><span class="kw">Core Web Vitals</span><span class="kw">Lighthouse 95+</span><span class="kw">CDN</span>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-icon dark">◻</div>
+      <h3>MarTech & Adobe Experience Cloud</h3>
+      <p>Consolidating fragmented MarTech stacks into unified, high-performance Adobe ecosystems. Experienced with Adobe Experience Platform (AEP), Adobe Target, Analytics, Workfront Fusion, and Salesforce Marketing & Commerce Cloud integrations.</p>
+      <div class="expertise-kws">
+        <span class="kw">Adobe Experience Platform</span><span class="kw">Adobe Target</span><span class="kw">Workfront Fusion</span><span class="kw">Salesforce MC</span><span class="kw">Marketo</span>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-icon red">◑</div>
+      <h3>Enterprise Solution Architecture</h3>
+      <p>Designing scalable, resilient enterprise platforms across AWS and Azure. Expert in microservices decomposition, API-led integration via MuleSoft, headless and composable DXP architecture, and zero-downtime migrations from monolithic legacy estates.</p>
+      <div class="expertise-kws">
+        <span class="kw">AWS</span><span class="kw">Azure</span><span class="kw">Microservices</span><span class="kw">MuleSoft</span><span class="kw">Headless CMS</span><span class="kw">Composable DXP</span>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-icon gold">◎</div>
+      <h3>Regulated Industry & Compliance</h3>
+      <p>Deep expertise in GDPR, PCI-DSS, and HIPAA for Banking, Financial Services, and Insurance platforms. Specialist in WAF implementation, Akamai security, ForgeRock IAM, fraud prevention architecture, and FCA-compliant delivery governance.</p>
+      <div class="expertise-kws">
+        <span class="kw">GDPR</span><span class="kw">PCI-DSS</span><span class="kw">HIPAA</span><span class="kw">ForgeRock</span><span class="kw">Akamai WAF</span><span class="kw">FCA Compliance</span>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-icon dark">◇</div>
+      <h3>Technical Leadership & Governance</h3>
+      <p>Proven authority leading 40+ developer cross-functional teams within Agile/Scrum frameworks. Acting as Technical Authority and client proxy for global enterprise programmes, translating complex roadmaps into C-suite strategic narratives.</p>
+      <div class="expertise-kws">
+        <span class="kw">Agile / Scrum</span><span class="kw">Technical Authority</span><span class="kw">Vendor Oversight</span><span class="kw">C-Suite Advisory</span><span class="kw">Architecture Governance</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-label">Career Timeline</div>
+  <h2 class="section-title">Experience Delivering<br>At Enterprise Scale</h2>
+  <p class="section-sub">A 15-year track record across global brands in Retail, Travel, Banking, and Insurance — consistently as the primary technical authority.</p>
+
+  <div class="exp-timeline fade-up">
+
+    <div class="exp-item">
+      <div class="exp-company-label">Deloitte UK · London</div>
+      <h3>Adobe AEM SME & Data Migration Architect</h3>
+      <div class="exp-sector">Travel & Accommodation · AEM Cloud Service Migration · B2C</div>
+      <ul class="exp-bullets">
+        <li>Technical Authority for zero-downtime migration of 5TB and 400,000 digital assets from legacy DAM to AEM Cloud Service (AEMaaCS)</li>
+        <li>Engineered a comprehensive backporting architecture ensuring seamless live e-commerce integration without operational disruption</li>
+        <li>Translated complex technical roadmaps for C-suite and executive stakeholders while governing distributed vendor teams to enterprise standards</li>
+        <li>Transitioning legacy monolithic architectures to cloud-native Adobe Experience Cloud solutions</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-company-label">Deloitte UK · London</div>
+      <h3>Adobe AEM SME & Integration Tech Lead</h3>
+      <div class="exp-sector">Retail E-Commerce · Global Travel · B2C Digital Transformation</div>
+      <ul class="exp-bullets">
+        <li>Delivered unified e-commerce platform integrating MuleSoft, SAP, Salesforce Marketing Cloud and Commerce Cloud under a centralised AEM ecosystem</li>
+        <li>Integrated AdTech bidding platform with AEM, driving 25% revenue growth from sponsored product placements</li>
+        <li>Migrated 5,000+ content entities to AWS microservices architecture, improving content delivery speed by 40%</li>
+        <li>Engineered SEO framework increasing indexed data by 70% and driving 82% uplift in organic traffic</li>
+        <li>Built high-performance caching sustaining 3× Black Friday traffic spikes with zero downtime</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-company-label">Deloitte UK · London</div>
+      <h3>Solution Architect & Tech Lead</h3>
+      <div class="exp-sector">Global Travel · Digital Experience Platform · B2C</div>
+      <ul class="exp-bullets">
+        <li>Rebuilt a global travel platform using AEM CaaS, MuleSoft and Elasticsearch enabling seamless real-time ticketing and order management</li>
+        <li>Led 40+ developers; content-reuse architecture reduced authoring effort by 35%</li>
+        <li>Increased organic traffic by 82% via a novel SEO framework and edge caching strategy</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-company-label">Deloitte UK · London</div>
+      <h3>Solution Design Lead & Integration Architect</h3>
+      <div class="exp-sector">Investment Banking · Insurance · Global E-Commerce</div>
+      <ul class="exp-bullets">
+        <li>Consolidated 5+ legacy CMS and DAM platforms, cutting operational overhead by $1.2M/year via workflow automation</li>
+        <li>Directed large-scale AEM initiative spanning Europe, North America, and Asia — overseeing a team of 50+ developers</li>
+        <li>Championed CI/CD automation across 28+ regional stores, eliminating manual release cycles</li>
+        <li>Established data governance and asset centralisation frameworks replacing manual, high-risk content processes with scalable automation</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-company-label">Deloitte USI · Hyderabad, India</div>
+      <h3>AEM Architect & International Tech Lead</h3>
+      <div class="exp-sector">Global E-Commerce · Telecommunications · Financial Services</div>
+      <ul class="exp-bullets">
+        <li>Unified 28 regional online stores into a single AEM/Hybris platform, managed from a single codebase with React frontend</li>
+        <li>Engineered caching and network topology sustaining 1M+ hits/minute at 99.99% availability during peak global events</li>
+        <li>Migrated 60TB and 4.6 million digital assets to Adobe AEM Assets from legacy DAM — zero service disruption</li>
+        <li>Architected AEM components and catalogue management interfaces for high-volume B2B Telco channels</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-company-label">Mphasis (An HP Company) · Bangalore, India</div>
+      <h3>Senior Developer — Java, Adobe Day CQ5 & Systems R&D</h3>
+      <div class="exp-sector">Banking · Insurance · Financial Services</div>
+      <ul class="exp-bullets">
+        <li>Developed a centralised insurance billing platform with secure, PCI-DSS-compliant payment modules</li>
+        <li>Migrated legacy banking content to Day CQ5 using Blueprints and Live Copy for automated global content rollout</li>
+        <li>Built multilingual financial services portals using CQ5 Multi-Site Management with live Data API integration</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="metrics">
+  <div class="section-label">Quantified Impact</div>
+  <h2 class="section-title" style="color:white;">Results That Speak<br>For Themselves</h2>
+  <div class="metrics-grid fade-up" style="margin-top:3rem;">
+    <div class="metric-item"><div class="metric-num">60<span>TB</span></div><div class="metric-label">Asset data migrated to AEM — zero downtime</div></div>
+    <div class="metric-item"><div class="metric-num">4.6<span>M</span></div><div class="metric-label">Digital assets migrated to AEM Assets</div></div>
+    <div class="metric-item"><div class="metric-num">$1.2<span>M</span></div><div class="metric-label">Annual cost savings via platform consolidation</div></div>
+    <div class="metric-item"><div class="metric-num">82<span>%</span></div><div class="metric-label">Organic traffic increase via AEM SEO framework</div></div>
+    <div class="metric-item"><div class="metric-num">1<span>M+</span></div><div class="metric-label">Hits/minute at 99.99% availability</div></div>
+    <div class="metric-item"><div class="metric-num">40<span>%</span></div><div class="metric-label">Content delivery speed improvement via AWS microservices</div></div>
+    <div class="metric-item"><div class="metric-num">35<span>%</span></div><div class="metric-label">Authoring effort reduction via content reuse model</div></div>
+    <div class="metric-item"><div class="metric-num">25<span>%</span></div><div class="metric-label">Revenue uplift from AdTech–AEM integration</div></div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title">Adobe Certified<br>& Professionally Recognised</h2>
+  <p class="section-sub">Holding the highest Adobe certification available — Master Architect — alongside a portfolio of Adobe specialisations and professional credentials.</p>
+  <div class="certs-grid fade-up">
+    <div class="cert-card"><div class="cert-icon">★</div><div><h4>Adobe Certified Master Architect — AEM</h4><p>Highest-level Adobe AEM certification, recognising deep architectural expertise across the full Adobe Experience Manager platform.</p></div></div>
+    <div class="cert-card"><div class="cert-icon">◈</div><div><h4>Adobe Workfront Fusion — Certified</h4><p>Certified in Adobe Workfront Fusion for enterprise marketing workflow automation and campaign management integration.</p></div></div>
+    <div class="cert-card"><div class="cert-icon">⬡</div><div><h4>Adobe Multi-Solution Developer</h4><p>Cross-platform Adobe certification spanning AEM Sites, Assets, Experience Platform, Target, and Analytics.</p></div></div>
+    <div class="cert-card"><div class="cert-icon">◎</div><div><h4>Adobe AEM Lead Developer</h4><p>Certified Adobe AEM Lead Developer — advanced development patterns, OSGi, Sling, and enterprise platform delivery.</p></div></div>
+    <div class="cert-card"><div class="cert-icon">◻</div><div><h4>Certified Scrum Master (CSM)</h4><p>Scrum Alliance CSM certification. Proven track record leading 15+ cross-functional teams in complex enterprise Agile environments.</p></div></div>
+    <div class="cert-card"><div class="cert-icon">◇</div><div><h4>Masters in Computer Applications — Grade A+</h4><p>Strong academic foundation in software engineering, algorithms, and distributed systems underpinning 15+ years of enterprise practice.</p></div></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label">Technical Toolkit</div>
+  <h2 class="section-title">Full-Stack Architecture<br>& Technology Expertise</h2>
+  <div class="skills-layout fade-up">
+    <div>
+      <div class="skill-group">
+        <h3>Adobe Experience Cloud</h3>
+        <div class="skill-pills">
+          <span class="skill-pill highlight">AEM Sites</span><span class="skill-pill highlight">AEM Assets</span><span class="skill-pill highlight">Edge Delivery Services</span><span class="skill-pill highlight">AEMaaCS</span><span class="skill-pill highlight">Adobe Experience Platform</span><span class="skill-pill">Adobe Target</span><span class="skill-pill">Adobe Analytics</span><span class="skill-pill">Workfront Fusion</span><span class="skill-pill">Adobe Launch</span><span class="skill-pill">AEM Managed Services</span><span class="skill-pill">AEM 6.x / 5.x</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Integration & MarTech</h3>
+        <div class="skill-pills">
+          <span class="skill-pill highlight">MuleSoft</span><span class="skill-pill highlight">Salesforce Marketing Cloud</span><span class="skill-pill highlight">Salesforce Commerce Cloud</span><span class="skill-pill">Hybris / SAP</span><span class="skill-pill">Marketo</span><span class="skill-pill">Citrus Ad / Google Ad Manager</span><span class="skill-pill">Elasticsearch</span><span class="skill-pill">ForgeRock IAM</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Engineering</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Java / Sling / OSGi</span><span class="skill-pill">Python</span><span class="skill-pill">Node.js / ES6+</span><span class="skill-pill">React</span><span class="skill-pill">GraphQL / REST APIs</span><span class="skill-pill">Microservices</span><span class="skill-pill">TDD / Selenium / Gatling</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group">
+        <h3>Cloud & DevOps</h3>
+        <div class="skill-pills">
+          <span class="skill-pill highlight">AWS (Lambda, S3, ECS, CloudFront)</span><span class="skill-pill highlight">Azure</span><span class="skill-pill">Docker / Kubernetes</span><span class="skill-pill">Terraform</span><span class="skill-pill">CI/CD (Cloud Manager, Jenkins)</span><span class="skill-pill">Akamai WAF</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Observability & Performance</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Splunk</span><span class="skill-pill">New Relic</span><span class="skill-pill">Grafana</span><span class="skill-pill">AppDynamics</span><span class="skill-pill">Kibana</span><span class="skill-pill">Apache JMeter</span><span class="skill-pill">SEO / AEO Architecture</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Governance & Compliance</h3>
+        <div class="skill-pills">
+          <span class="skill-pill highlight">GDPR</span><span class="skill-pill highlight">PCI-DSS</span><span class="skill-pill">HIPAA</span><span class="skill-pill">FCA Compliance</span><span class="skill-pill">Fraud Prevention Architecture</span><span class="skill-pill">Agentic AI Frameworks</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Industries</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Banking & Financial Services</span><span class="skill-pill">Insurance & Wealth Management</span><span class="skill-pill">Retail E-Commerce</span><span class="skill-pill">Travel & Hospitality</span><span class="skill-pill">Telecommunications</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Build Something<br>Extraordinary</h2>
+  <p>Available for AEM architecture programmes, Edge Delivery Services implementations, enterprise MarTech strategy, and digital transformation leadership. Based in London.</p>
+  <div class="cta-actions">
+    <a href="https://www.linkedin.com/in/bimal-pati/" target="_blank" rel="noopener" class="btn-white">Connect on LinkedIn ↗</a>
+    <a href="mailto:bimal.kanta.pati@gmail.com" class="btn-outline-white">bimal.kanta.pati@gmail.com</a>
+  </div>
+</section>
+
 <footer>
-    &copy; 2024 Bimal Pati. Built for GitHub Pages.
+  <div class="footer-brand">Bimal Pati</div>
+  <div class="footer-copy">© 2025 Bimal Pati · Adobe AEM Master Architect · London, UK</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/bimal-pati/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:bimal.kanta.pati@gmail.com">Email</a>
+    <a href="#top">Back to top ↑</a>
+  </div>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
