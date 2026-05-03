@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimal Pati | Solution Architect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+        
+        header { background: var(--primary); color: var(--white); padding: 4rem 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 2rem; }
+        
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.2rem; color: var(--accent); font-weight: bold; margin-bottom: 1rem; }
+        .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 1rem; }
+        .contact-info a { color: var(--white); text-decoration: none; font-size: 0.9rem; }
+
+        section { background: var(--white); margin-bottom: 2rem; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--primary); }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .skill-category h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--secondary); }
+        .skill-tag { display: inline-block; background: #e1e8ed; padding: 0.3rem 0.8rem; border-radius: 20px; margin: 0.2rem; font-size: 0.85rem; }
+
+        .job { margin-bottom: 2rem; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: bold; color: var(--primary); font-size: 1.1rem; }
+        .job-date { color: #7f8c8d; font-size: 0.9rem; }
+        .job-company { color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
+        
+        ul { margin-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        footer { text-align: center; padding: 2rem; color: #7f8c8d; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bimal Pati</h1>
+    <div class="subtitle">Solution Architect | Enterprise Digital Transformation</div>
+    <div class="contact-info">
+        <span><i class="fas fa-map-marker-alt"></i> London, UK</span>
+        <a href="mailto:bimal.kanta.pati@gmail.com"><i class="fas fa-envelope"></i> bimal.kanta.pati@gmail.com</a>
+        <a href="https://www.linkedin.com/in/bimal-pati" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <span><i class="fas fa-phone"></i> +44-7737989760</span>
+    </div>
+</header>
+
+<div class="container">
+    <section id="summary">
+        <h2>Executive Summary</h2>
+        <p>Digital Transformation Leader & AEM Master Architect with 15+ years of experience delivering enterprise-scale platforms. Specialist in consolidating fragmented legacy estates into cloud-native architectures, driving $1.2M/year in cost savings and 30% faster content lifecycles[cite: 1].</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Toolkit</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Adobe Suite</h3>
+                <span class="skill-tag">AEM Cloud Service</span>
+                <span class="skill-tag">AEP</span>
+                <span class="skill-tag">Target</span>
+                <span class="skill-tag">Analytics</span>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <span class="skill-tag">AWS (Lambda, S3, ECS)</span>
+                <span class="skill-tag">Azure</span>
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">CI/CD</span>
+            </div>
+            <div class="skill-category">
+                <h3>Engineering</h3>
+                <span class="skill-tag">Java/Sling</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Microservices</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">Adobe AEM SME & Solution Architect</div>
+                <div class="job-date">April 2019 – Present</div>
+            </div>
+            <div class="job-company">Deloitte UK | London, UK</div>
+            <ul>
+                <li>Acting as primary architect for a 5TB/400k asset legacy migration to AEM Cloud Service[cite: 1].</li>
+                <li>Designed a global travel platform for AlUla using AEM CaaS and MuleSoft[cite: 1].</li>
+                <li>Unified Waitrose's disparate systems into a centralized AEM ecosystem, handling 3x Black Friday traffic spikes[cite: 1].</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div class="job-title">AEM Architect & International Tech Lead</div>
+                <div class="job-date">June 2013 – March 2019</div>
+            </div>
+            <div class="job-company">Deloitte USI | Hyderabad, India</div>
+            <ul>
+                <li>Unified 28 regional online stores for a global sportswear retailer into a single codebase[cite: 1].</li>
+                <li>Engineered caching support for 1M+ hits/minute with 99.99% availability[cite: 1].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <ul>
+            <li><strong>Adobe Certified Master:</strong> AEM Architect[cite: 1]</li>
+            <li><strong>Masters in Computer Applications (MCA):</strong> Grade A+[cite: 1]</li>
+            <li><strong>BSc Mathematics:</strong> 87%[cite: 1]</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    &copy; 2024 Bimal Pati. Built for GitHub Pages.
+</footer>
+
+</body>
+</html>
